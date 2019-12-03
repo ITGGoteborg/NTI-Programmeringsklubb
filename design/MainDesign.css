@@ -1,10 +1,55 @@
-html {
+body {
     margin: 0;
     padding: 0;
+    box-sizing: unset;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "Nav" "Content" "Footer";
+    font-family: Calibri;
 }
 
-footer {
+.NavbarSection {
+    grid-area: Nav;
+    width: 100vw;
+    height: auto;
+    box-shadow: 0px 0px 31px 12px rgba(0,0,0,0.38);
+}
+
+    .NavbarSection img {
+        width: 65%;
+        height: auto;
+        margin: 30px;
+    }
+
+.NavbarsContainer {
+    cursor: pointer;
+    display: block;
+    z-index: 1;
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    right: 3vw;
+    top: 3vw;
+    font-size: 15vw;
+    color: white;
+}
+
+.TopContent figure {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+    .TopContent figure img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+footer {
+    grid-area: Footer;
 }

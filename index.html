@@ -4,14 +4,42 @@
     <link href="design/MainDesign.css" rel="stylesheet" />
     <link href="design/FadeIn.css" rel="stylesheet" />
     <link href="design/Footer.css" rel="stylesheet" />
+    <link href="design/Sidenav.css" rel="stylesheet" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Happy Christmas</title>
 </head>
 <body class="fade1">
+    <section class="NavbarSection fade2">
+        <img class="Logo" src="img/Grafiskprofil/Logga/NTI_Johannebergs_Programmeringsklubb_vit.png" alt="Alternate Text" />
 
+        <div class="NavbarsContainer" onclick="openNav()">
+            &#9776;
+        </div>
 
+        <nav id="mySidenav" class="sidenav Hidden">
+            <ul>
+                <li href="scripts/MainFunctions.js" class="closebtn" onclick="closeNav()">
+                    &times;
+                </li>
+
+                <li>Start</li>
+                <li>Challanges</li>
+                <li>Forum</li>
+                <li>Github</li>
+                <li>Tider/Möten</li>
+                <li>Kontakter</li>
+            </ul>
+            <script src="scripts/MainFunctions.js"></script>
+        </nav>
+    </section>
+    <section class="TopContent">
+        <figure>
+            <img src="img/code-bg.jpg" alt="Code background image" />
+        </figure>
+    </section>
 
     <footer class="fade5">
         <p>
