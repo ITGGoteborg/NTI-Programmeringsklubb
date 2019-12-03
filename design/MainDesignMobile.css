@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 25vw 6fr 25vw;
+    grid-template-columns: 1fr;
+    grid-template-areas: "Nav" "Content" "Footer";
+    font-family: sans-serif;
+}
+
+.NavbarSection {
+    grid-area: Nav;
+    width: 100vw;
+    height: auto;
+}
+
+    .NavbarSection img {
+        width: 65%;
+        height: auto;
+        margin: 30px;
+    }
+
+.NavbarsContainer {
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    right: 3vw;
+    top: 3vw;
+    font-size: 15vw;
+    color: white;
+}
+
+.Content {
+    grid-area: Content;
+}
+
+    .Content figure {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+        .Content figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            box-shadow: 0px 0px 31px 12px rgba(0,0,0,0.38);
+        }
+
+.ContentSection h1 {
+    margin: auto;
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.ContentText {
+    width: 95vw;
+    height: auto;
+    background-color: white;
+    border-radius: 1vw;
+    display: block;
+    margin: auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    box-shadow: 31px 31px 31px 31px rgba(0,0,0,0.38);
+    color: #646464;
+}
+
+    .ContentText h2 {
+        width: 80%;
+        text-align: center;
+        font-size: 7vw;
+        padding: 5vw;
+        margin: auto;
+        border-bottom: 2px solid rgba(150, 150, 150, 0.50);
+    }
+
+    .ContentText p {
+        width: 80%;
+        font-size: 5vw;
+        padding: 5vw;
+        margin: auto;
+        color: #777;
+        line-height: 1.6;
+        border-bottom: 2px solid rgba(150, 150, 150, 0.50);
+    }
+
+.TimeToNextMeeting {
+    text-align: center;
+}
+
+footer {
+    grid-area: Footer;
+}
