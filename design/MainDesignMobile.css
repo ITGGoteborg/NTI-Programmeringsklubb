@@ -28,7 +28,11 @@ body {
     right: 3vw;
     top: 3vw;
     font-size: 15vw;
+    text-align: center;
+    vertical-align: middle;
     color: white;
+    width: 15vw;
+    height: 15vw;
 }
 
 .Content {
