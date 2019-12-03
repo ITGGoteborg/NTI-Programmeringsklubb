@@ -35,7 +35,7 @@ body {
     color: white;
 }
 
-.TopContent figure {
+.Content figure {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -44,10 +44,17 @@ body {
     z-index: -1;
 }
 
-    .TopContent figure img {
+    .Content figure img {
         display: block;
         width: 100%;
         height: auto;
+    }
+
+    .Content content h1{
+        margin: auto;
+        color: white;
+        font-size: 10vw;
+        text-align: center;
     }
 
 footer {
