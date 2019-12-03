@@ -72,7 +72,7 @@ body {
     margin-top: 5vw;
     margin-bottom: 5vw;
     box-shadow: 31px 31px 31px 31px rgba(0,0,0,0.38);
-    color: #646464;
+    color: #333333;
 }
 
     .ContentText h2 {
@@ -91,7 +91,6 @@ body {
         font-weight: lighter;
         padding: 5vw;
         margin: auto;
-        color: #777;
         line-height: 1.6;
         border-bottom: 2px solid rgba(150, 150, 150, 0.50);
     }
