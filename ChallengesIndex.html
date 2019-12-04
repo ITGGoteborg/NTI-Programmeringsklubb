@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="design/MainDesignMobile.css" rel="stylesheet" />
+    <link href="design/FadeIn.css" rel="stylesheet" />
+    <link href="design/Footer.css" rel="stylesheet" />
+    <link href="design/Sidenav.css" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Coding</title>
+</head>
+<body>
+    <script src="scripts/MainFunctions.js"></script>
+
+    <section class="NavbarSection">
+
+        <img class="Logo" src="img/Grafiskprofil/Logga/NTI_Johannebergs_Programmeringsklubb_vit.png" alt="Alternate Text" />
+
+        <div class="NavbarsContainer" onclick="openNav()">
+            &#9776;
+        </div>
+
+        <nav id="mySidenav" class="sidenav Hidden">
+            <ul>
+                <li href="scripts/MainFunctions.js" class="closebtn" onclick="closeNav()">
+                    &times;
+                </li>
+                <li><a href="MainIndex.html">Start</a></li>
+                <li><a href="ChallengesIndex.html">Challenges</a></li>
+                <li><a href="#">Forum</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Tider/Möten</a></li>
+                <li><a href="#">Kontakter</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="Content">
+        <figure>
+            <img src="img/code-bg.jpg" alt="Code background image" />
+        </figure>
+        <content class="ContentSection">
+            <h1><blue style="color: #3e7ee1; ">C</blue><Pink style="color: #eb0077;">H</Pink><Orange style="color: #f09700;">A</Orange>LLENGES</h1>
+
+            <article class="ContentText">
+                <h2>Här är några sidor som innehåller många roliga och svåra utmaningar.</h2>
+                <h2><a href="https://projecteuler.net/" target="_blank">Project Euler</a></h2>
+                <h3>Vad är Project Euler?</h3>
+                <p>En samling av matematiska problem som testar ens problemslösningsförmåga med hjälp av programmering. Det är en perfekt utmaning för dig som vill öka dina kunskaper inom programmering eftersom man behöver tänka utanför boxen. <br />Besök hemsidan här: <a href="https://projecteuler.net/" target="_blank">Project Euler</a>.</p>
+
+                <img src="img/Euler.png" alt="Projeect Euler bild" />
+
+                <h2><a href="https://www.codewars.com/">Codewars</a></h2>
+                <p>Codewars är ett pedagogiskt samhälle för datorprogrammering. På plattformen tränar programvaruutvecklare på programmeringsutmaningar kända som Kata. Dessa diskreta programmeringsövningar utbildar en mängd färdigheter på olika programmeringsspråk och avslutas inom en online integrerad utvecklingsmiljö. <br />Besök hemsidan här: <a href="https://www.codewars.com/">Codewars</a></p>
+            </article>
+        </content>
+    </section>
+    <footer class="fade1">
+        <p>
+            <a>©2019 CurrySoft Games</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -12,7 +12,7 @@
 }
 
     .sidenav ul li {
-        padding: 2.2vw 2.2vw 2.2vw 9vw;
+        padding: 2.2vw 2.2vw 2.2vw 0vw;
         text-decoration: none;
         font-size: 7vw;
         color: #e2e2e2;
@@ -20,9 +20,18 @@
         transition: 0.3s;
     }
 
-        .sidenav ul li:hover {
-            color: #f1f1f1;
+        .sidenav ul li a {
+            padding: inherit;
+            text-decoration: inherit;
+            font-size: inherit;
+            color: inherit;
+            display: inherit;
+            transition: inherit;
         }
+
+            .sidenav ul li a:hover {
+                color: #f1f1f1;
+            }
 
     .sidenav .closebtn {
         position: absolute;

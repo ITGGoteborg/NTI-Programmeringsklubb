@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 25vw 6fr 25vw;
+    grid-template-rows: 25vw 1fr 25vw;
     grid-template-columns: 1fr;
     grid-template-areas: "Nav" "Content" "Footer";
     font-family: sans-serif;
@@ -13,6 +13,9 @@ body {
     width: 100vw;
     height: auto;
 }
+
+    .NavbarSection h1 {
+    }
 
     .NavbarSection img {
         width: 65%;
@@ -79,39 +82,54 @@ body {
     color: #333333;
 }
 
-    .ContentText h2 {
-        width: 80%;
-        text-align: center;
-        font-size: 7vw;
-        font-weight: lighter;
-        padding: 5vw;
-        margin: auto;
-        border-bottom: 2px solid rgba(150, 150, 150, 0.50);
+#Discord {
+    width: 100%;
+    height: 100vw;
+}
+
+.ContentText h2 {
+    width: 80%;
+    text-align: center;
+    font-size: 7vw;
+    font-weight: lighter;
+    padding: 5vw;
+    margin: auto;
+    border-bottom: 2px solid rgba(150, 150, 150, 0.50);
+}
+
+    .ContentText h2 a {
+        text-decoration: inherit;
+        color: inherit;
     }
 
-    .ContentText h3 {
-        width: 80%;
-        text-align: center;
-        font-size: 5vw;
-        font-weight: lighter;
-        padding-top: 5vw;
-        margin: auto;
+.ContentText h3 {
+    width: 80%;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: lighter;
+    padding-top: 5vw;
+    margin: auto;
+}
+
+    .ContentText h3 a {
+        text-decoration: inherit;
+        color: inherit;
     }
 
-    .ContentText p {
-        width: 80%;
-        font-size: 4vw;
-        font-weight: lighter;
-        padding: 5vw;
-        margin: auto;
-        line-height: 1.6;
-        border-bottom: 2px solid rgba(150, 150, 150, 0.50);
-    }
+.ContentText p {
+    width: 80%;
+    font-size: 4vw;
+    font-weight: lighter;
+    padding: 5vw;
+    margin: auto;
+    line-height: 1.6;
+    border-bottom: 2px solid rgba(150, 150, 150, 0.50);
+}
 
-    .ContentText img {
-        width: 100%;
-        height: auto;
-    }
+.ContentText img {
+    width: 100%;
+    height: auto;
+}
 
 .TimeToNextMeeting {
     text-align: center;
