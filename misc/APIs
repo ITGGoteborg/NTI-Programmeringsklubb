@@ -1,0 +1,5 @@
+//Google calendar
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%234285F4&amp;ctz=Europe%2FStockholm&amp;src=dG45cjVpbWIxdTNnMHRyczkwam1vbDhhM29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3Yuc3dlZGlzaCNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D6AE00&amp;color=%233366CC&amp;mode=MONTH&amp;hl=sv&amp;title" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+//Discord
+<iframe src="https://discordapp.com/widget?id=415871324045705216&theme=dark" id="Discord" allowtransparency="true" frameborder="0"></iframe>

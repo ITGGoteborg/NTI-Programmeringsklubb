@@ -82,57 +82,74 @@ body {
     color: #333333;
 }
 
+    .ContentText h2 {
+        width: 80%;
+        text-align: center;
+        font-size: 7vw;
+        font-weight: lighter;
+        padding: 5vw;
+        margin: auto;
+        border-bottom: 2px solid rgba(150, 150, 150, 0.50);
+    }
+
+        .ContentText h2 a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+    .ContentText h3 {
+        width: 80%;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: lighter;
+        padding-top: 5vw;
+        margin: auto;
+    }
+
+        .ContentText h3 a {
+            text-decoration: inherit;
+            color: inherit;
+        }
+
+    .ContentText p {
+        width: 80%;
+        font-size: 4vw;
+        font-weight: lighter;
+        padding: 5vw;
+        margin: auto;
+        line-height: 1.6;
+        border-bottom: 2px solid rgba(150, 150, 150, 0.50);
+    }
+
+    .ContentText img {
+        width: 100%;
+        height: auto;
+    }
+
+.TimeToNextMeeting {
+    text-align: center;
+}
+
+.APIContainer {
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    margin: auto;
+}
+
 #Discord {
     width: 100%;
     height: 100vw;
 }
 
-.ContentText h2 {
-    width: 80%;
-    text-align: center;
-    font-size: 7vw;
-    font-weight: lighter;
-    padding: 5vw;
-    margin: auto;
-    border-bottom: 2px solid rgba(150, 150, 150, 0.50);
-}
-
-    .ContentText h2 a {
-        text-decoration: inherit;
-        color: inherit;
-    }
-
-.ContentText h3 {
-    width: 80%;
-    text-align: center;
-    font-size: 5vw;
-    font-weight: lighter;
-    padding-top: 5vw;
-    margin: auto;
-}
-
-    .ContentText h3 a {
-        text-decoration: inherit;
-        color: inherit;
-    }
-
-.ContentText p {
-    width: 80%;
-    font-size: 4vw;
-    font-weight: lighter;
-    padding: 5vw;
-    margin: auto;
-    line-height: 1.6;
-    border-bottom: 2px solid rgba(150, 150, 150, 0.50);
-}
-
-.ContentText img {
-    width: 100%;
-    height: auto;
-}
-
-.TimeToNextMeeting {
-    text-align: center;
+#GoogleCalendar {
+    width: 90%;
+    height: 100%;
+    border-radius: 2vw;
+    box-shadow: 31px 31px 31px 31px rgba(0,0,0,0.38);
 }
 
 footer {
