@@ -8,13 +8,13 @@
     background-color: rgba(25, 25, 25, 0.90);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 17vw;
+    padding-top: 17vh;
 }
 
     .sidenav ul li {
-        padding: 2.2vw 2.2vw 2.2vw 0vw;
+        padding: 2.2vh 2.2vh 2.2vh 0vh;
         text-decoration: none;
-        font-size: 7vw;
+        font-size: 5vh;
         color: #e2e2e2;
         display: block;
         transition: 0.3s;
@@ -36,7 +36,7 @@
     .sidenav .closebtn {
         position: absolute;
         top: 0;
-        right: 7vw;
-        font-size: 10vw;
-        margin-left: 14vw;
+        right: 7vh;
+        font-size: 10vh;
+        margin-left: 14vh;
     }

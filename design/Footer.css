@@ -5,11 +5,22 @@ footer {
 }
 
     footer p {
-        margin-top: 5vh;
+        margin-top: 9vh;
     }
 
         footer p a {
             color: white;
             font-family: Calibri;
+            font-size: 3vh;
+        }
+
+@media (orientation: portrait) {
+    footer p {
+        margin-top: 10vw;
+    }
+
+        footer p a {
+            color: white;
             font-size: 5vw;
         }
+}

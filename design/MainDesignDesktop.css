@@ -1,12 +1,13 @@
-@media (orientation: portrait) {
+@media (orientation: landscape) {
     body {
         margin: 0;
         padding: 0;
         display: grid;
-        grid-template-rows: 25vw 1fr 25vw;
+        grid-template-rows: 40vh 1fr 20vh;
         grid-template-columns: 1fr;
         grid-template-areas: "Nav" "Content" "Footer";
         font-family: sans-serif;
+        overflow-x: hidden;
     }
 
     .NavbarSection {
@@ -15,11 +16,8 @@
         height: auto;
     }
 
-        .NavbarSection h1 {
-        }
-
         .NavbarSection img {
-            width: 65%;
+            width: 25%;
             height: auto;
             margin: 30px;
         }
@@ -29,14 +27,12 @@
         display: block;
         z-index: 1;
         position: absolute;
-        right: 3vw;
-        top: 3vw;
-        font-size: 15vw;
+        right: 2vh;
+        top: 2vh;
+        font-size: 10vh;
         text-align: center;
         vertical-align: middle;
         color: white;
-        width: 15vw;
-        height: 15vw;
     }
 
     .Content {
@@ -60,24 +56,25 @@
             }
 
     .ContentSection {
+        width: 50%;
     }
 
         .ContentSection h1 {
             margin: auto;
             color: white;
-            font-size: 10vw;
+            font-size: 7vh;
             text-align: center;
         }
 
     .ContentText {
-        width: 95vw;
+        width: 90%;
         height: auto;
         background-color: white;
-        border-radius: 1vw;
+        border-radius: 1vh;
         display: block;
         margin: auto;
-        margin-top: 5vw;
-        margin-bottom: 5vw;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         box-shadow: 31px 31px 31px 31px rgba(0,0,0,0.38);
         color: black;
     }
@@ -85,9 +82,9 @@
         .ContentText h2 {
             width: 80%;
             text-align: center;
-            font-size: 7vw;
+            font-size: 5vh;
             font-weight: lighter;
-            padding: 5vw;
+            padding: 5vh;
             margin: auto;
             border-bottom: 2px solid rgba(150, 150, 150, 0.50);
         }
@@ -100,9 +97,9 @@
         .ContentText h3 {
             width: 80%;
             text-align: center;
-            font-size: 5vw;
+            font-size: 4vh;
             font-weight: lighter;
-            padding-top: 5vw;
+            padding-top: 5vh;
             margin: auto;
         }
 
@@ -113,9 +110,9 @@
 
         .ContentText p {
             width: 80%;
-            font-size: 4vw;
+            font-size: 3vh;
             font-weight: normal;
-            padding: 5vw;
+            padding: 5vh;
             margin: auto;
             line-height: 1.6;
             border-bottom: 2px solid rgba(150, 150, 150, 0.50);
@@ -132,7 +129,7 @@
 
     .APIContainer {
         width: 100%;
-        height: 100vw;
+        height: 80vh;
         display: flex;
         justify-content: center;
         padding-top: 5vw;
@@ -142,7 +139,7 @@
 
     #Discord {
         width: 90%;
-        height: 100vw;
+        height: 80vh;
     }
 
     #GoogleCalendar {
