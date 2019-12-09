@@ -79,7 +79,7 @@ body {
     margin-top: 5vw;
     margin-bottom: 5vw;
     box-shadow: 31px 31px 31px 31px rgba(0,0,0,0.38);
-    color: #333333;
+    color: black;
 }
 
     .ContentText h2 {
@@ -114,7 +114,7 @@ body {
     .ContentText p {
         width: 80%;
         font-size: 4vw;
-        font-weight: 300;
+        font-weight: lighter;
         padding: 5vw;
         margin: auto;
         line-height: 1.6;
