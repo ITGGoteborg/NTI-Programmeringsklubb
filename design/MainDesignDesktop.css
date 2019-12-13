@@ -1,151 +1,52 @@
 @media (orientation: landscape) {
     body {
-        margin: 0;
-        padding: 0;
-        display: grid;
         grid-template-rows: 40vh 1fr 20vh;
-        grid-template-columns: 1fr;
-        grid-template-areas: "Nav" "Content" "Footer";
-        font-family: sans-serif;
         overflow-x: hidden;
     }
 
-    .NavbarSection {
-        grid-area: Nav;
-        width: 100vw;
-        height: auto;
+    .NavbarSection img {
+        width: 25%;
     }
 
-        .NavbarSection img {
-            width: 25%;
-            height: auto;
-            margin: 30px;
-        }
-
     .NavbarsContainer {
-        cursor: pointer;
-        display: block;
-        z-index: 1;
-        position: absolute;
         right: 2vh;
         top: 2vh;
         font-size: 10vh;
-        text-align: center;
-        vertical-align: middle;
-        color: white;
+        width: 13vh;
+        height: 6vh;
     }
 
-    .Content {
-        grid-area: Content;
+    .ContentSection h1 {
+        font-size: 7vh;
     }
-
-        .Content figure {
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            top: 0;
-            width: 100vw;
-            z-index: -1;
-        }
-
-            .Content figure img {
-                display: block;
-                width: 100vw;
-                height: auto;
-                box-shadow: 0px 0px 31px 12px rgba(0,0,0,0.38);
-            }
-
-        .ContentSection h1 {
-            margin: auto;
-            color: white;
-            font-size: 7vh;
-            text-align: center;
-        }
 
     .ContentText {
         width: 65%;
-        height: auto;
-        background-color: white;
-        border-radius: 1vh;
-        display: block;
-        margin: auto;
         margin-top: 5vh;
         margin-bottom: 5vh;
-        box-shadow: 31px 31px 31px 31px rgba(0,0,0,0.38);
-        color: black;
     }
 
         .ContentText h2 {
-            width: 80%;
-            text-align: center;
             font-size: 5vh;
-            font-weight: lighter;
             padding: 5vh;
-            margin: auto;
-            border-bottom: 2px solid rgba(150, 150, 150, 0.50);
         }
-
-            .ContentText h2 a {
-                text-decoration: inherit;
-                color: inherit;
-            }
 
         .ContentText h3 {
-            width: 80%;
-            text-align: center;
             font-size: 4vh;
-            font-weight: lighter;
             padding-top: 5vh;
-            margin: auto;
         }
-
-            .ContentText h3 a {
-                text-decoration: inherit;
-                color: inherit;
-            }
 
         .ContentText p {
-            width: 80%;
             font-size: 3vh;
-            font-weight: normal;
             padding: 5vh;
-            margin: auto;
-            line-height: 1.6;
-            border-bottom: 2px solid rgba(150, 150, 150, 0.50);
         }
-
-        .ContentText img {
-            width: 100%;
-            height: auto;
-        }
-
-    .TimeToNextMeeting {
-        text-align: center;
-    }
 
     .APIContainer {
-        width: 100%;
         height: 80vh;
         display: flex;
-        justify-content: center;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
-        margin: auto;
     }
 
     #Discord {
-        width: 90%;
         height: 80vh;
-    }
-
-    #GoogleCalendar {
-        width: 90%;
-        height: 100%;
-        border-radius: 2vw;
-        box-shadow: 31px 31px 31px 31px rgba(0,0,0,0.38);
-    }
-
-    footer {
-        grid-area: Footer;
     }
 }
