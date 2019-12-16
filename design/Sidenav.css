@@ -12,9 +12,9 @@
 }
 
     .sidenav ul li {
-        padding: 2.2vh 2.2vh 2.2vh 0vh;
+        padding: 1vh 2.2vh 1vh 1vh;
         text-decoration: none;
-        font-size: 5vh;
+        font-size: 3vh;
         color: #e2e2e2;
         display: block;
         transition: 0.3s;
@@ -30,7 +30,7 @@
         }
 
             .sidenav ul li a:hover {
-                color: #f1f1f1;
+                background-color: rgba(96, 96, 96, 0.70)
             }
 
     .sidenav .closebtn {

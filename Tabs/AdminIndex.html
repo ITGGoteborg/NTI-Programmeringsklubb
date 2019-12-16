@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="../design/AdminTab.css" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="ChallengesIndex.html">Challenges</a></li>
+            <li><a href="MeetingsIndex.html">Tider/Möten</a></li>
+            <li><a href="https://github.com/ITGGoteborg">Github</a></li>
+            <li><a href="ContactsIndex.html">Kontakter</a></li>
+            <li><a href="AdminIndex.html">*Admin*</a></li>
+        </ul>
+    </nav>
+    <content>
+        <h2>Skapa ett inlägg på hemsidan</h2>
+        <h3>Vilka tabbar?</h3>
+        <ol>
+            <li><input type="checkbox" id="StartTab" />Start</li>
+            <li><input type="checkbox" id="ChallengesTab" />Challenges</li>
+            <li><input type="checkbox" id="MeetingsTab" />Tider/Möten</li>
+            <li><input type="checkbox" id="ContactsTab" />Kontakter</li>
+        </ol>
+
+        <h3>Rubrik</h3>
+        <input type="text" id="H2" value="Header2" />
+
+        <h3>Underrubrik</h3>
+        <input type="text" id="H3" value="Header3" />
+
+        <h3>Text</h3>
+        <textarea id="P">Skriv saker som ska vara i inlägget</textarea>
+
+        <h3>Bild</h3>
+        <input type="url" id="IMG" value="Image URL" />
+
+        <button onclick="Getter()">Submit</button>
+        <script src="../scripts/GetInputs.js"></script>
+    </content>
+</body>
+</html>

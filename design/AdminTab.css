@@ -1,0 +1,30 @@
+body {
+    background-image: url("../img/AdminBG.jpg");
+    background-size: cover;
+}
+
+nav {
+    background-color: #b4b4b4;
+}
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        color: black;
+    }
+
+        nav ul li {
+            margin: 10px;
+        }
+
+content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(177, 177, 177, 0.60);
+    border-radius: 10px;
+}
