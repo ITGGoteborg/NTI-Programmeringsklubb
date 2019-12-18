@@ -5,7 +5,8 @@
     }
 
     .NavbarSection img {
-        width: 25%;
+        /* width: 25%; */
+        max-height: 100px;
     }
 
     .NavbarsContainer {
