@@ -4,9 +4,8 @@
         overflow-x: hidden;
     }
 
-    .NavbarSection img {
-        /* width: 25%; */
-        max-height: 100px;
+    .NavbarSection a {
+        width: 25%;
     }
 
     .NavbarsContainer {

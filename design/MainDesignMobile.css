@@ -12,14 +12,9 @@ body {
 .NavbarSection {
     grid-area: Nav;
     width: 100%;
-    height: 70px;
+    height: 100%;
     box-sizing: border-box;
-    position: absolute;
     display: flex;
-    align-items: center;
-    top: 0;
-    right: 0;
-    z-index: 1;
 }
 
     .NavbarSection .toggler {
@@ -31,8 +26,6 @@ body {
         width: 70px;
         height: 70px;
         opacity: 0;
-        align-items: center;
-        justify-content: center;
         margin: 0;
     }
 
@@ -43,7 +36,7 @@ body {
         right: 0;
         z-index: 1;
         width: 70px;
-        height: 100%;
+        height: 70px;
         padding: 0.7rem;
         display: flex;
         align-items: center;
@@ -82,14 +75,15 @@ body {
             width: 61vw ;
         }
 
-    .NavbarSection img {
-        /* width: 65%;
-        height: auto; */
-        max-width: 60%;
+    .NavbarSection a {
+        max-width: 65%;
+        padding: 0.7rem;
         max-height: 70px;
-        align-content: center;
-        margin-left: 10px;
-        /* margin-top: 5px; */
+    }
+
+    .NavbarSection img {
+        max-width: 100%;
+        max-height: 100%;
     }
 
 .NavbarsContainer { /* Vad gör denna class? */
