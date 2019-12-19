@@ -12,7 +12,7 @@ body {
 .NavbarSection {
     grid-area: Nav;
     width: 100%;
-    height: 100%;
+    height: 70px;
     box-sizing: border-box;
     display: flex;
 }
@@ -41,7 +41,6 @@ body {
         display: flex;
         align-items: center;
     }
-
         .NavbarSection .hamburger > div {
             position: relative;
             width: 100%;
@@ -72,19 +71,18 @@ body {
             }
         
         header .toggler:checked ~ .sidenav {
-            width: 61vw ;
+            width: 61vw;
         }
 
     .NavbarSection a {
         max-width: 65%;
-        padding: 0.7rem;
+        margin: 0.7rem;
         max-height: 70px;
     }
-
-    .NavbarSection img {
-        max-width: 100%;
-        max-height: 100%;
-    }
+        .NavbarSection a img {
+            max-width: 100%;
+            max-height: 100%;
+        }
 
 .NavbarsContainer { /* Vad gör denna class? */
     cursor: pointer;
