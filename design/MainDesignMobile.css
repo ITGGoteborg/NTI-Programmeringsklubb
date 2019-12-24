@@ -2,25 +2,89 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 25vw 1fr 25vw;
-    grid-template-columns: 1fr;
-    grid-template-areas: "Nav" "Content" "Footer";
+    grid-template-rows: 70px auto 25vw;
+    grid-template-areas: 
+    "Nav" 
+    "Content" "Footer";
     font-family: sans-serif;
 }
 
 .NavbarSection {
     grid-area: Nav;
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
 }
 
-    .NavbarSection img {
-        width: 65%;
-        height: auto;
-        margin: 30px;
+    .NavbarSection .toggler {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+        opacity: 0;
+        margin: 0;
     }
 
-.NavbarsContainer {
+    .NavbarSection .hamburger {
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 70px;
+        height: 70px;
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+    }
+        .NavbarSection .hamburger > div {
+            position: relative;
+            width: 100%;
+            height: 4px;
+            background-color: #ffffff;
+            transition: all 0.4s ease;
+        }
+            .NavbarSection .hamburger > div:before,
+            .NavbarSection .hamburger > div:after {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                top: -14px;
+                width: 100%;
+                height: 4px;
+                background: inherit;
+            }
+            .NavbarSection .hamburger > div:after {
+                top: 14px;
+            }
+        .NavbarSection .toggler:checked + .hamburger > div {
+            transform: rotate(135deg);
+        }
+            .NavbarSection .toggler:checked + .hamburger > div:before,
+            .NavbarSection .toggler:checked + .hamburger > div:after {
+                top: 0;
+                transform: rotate(90deg);
+            }
+        
+        header .toggler:checked ~ .sidenav {
+            width: 61vw;
+        }
+
+    .NavbarSection a {
+        max-width: 65%;
+        margin: 0.7rem;
+        max-height: 70px;
+    }
+        .NavbarSection a img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+.NavbarsContainer { /* Vad gör denna class? */
     cursor: pointer;
     display: block;
     z-index: 1;
@@ -44,13 +108,13 @@ body {
         padding: 0;
         position: absolute;
         top: 0;
-        width: 100vw;
+        width: 100%;
         z-index: -1;
     }
 
         .Content figure img {
             display: block;
-            width: 100vw;
+            width: 100%;
             height: auto;
             box-shadow: 0px 0px 31px 12px rgba(0,0,0,0.38);
         }
@@ -63,7 +127,7 @@ body {
 }
 
 .ContentText {
-    width: 95vw;
+    width: 95%;
     height: auto;
     background-color: white;
     border-radius: 1vw;

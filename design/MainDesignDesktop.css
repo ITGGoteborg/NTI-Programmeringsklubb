@@ -4,9 +4,18 @@
         overflow-x: hidden;
     }
 
-    .NavbarSection img {
-        width: 25%;
+    .NavbarSection {
+        height: auto;
     }
+
+        header .toggler:checked ~ .sidenav {
+            width: 29vw;
+        }
+        
+        .NavbarSection a {
+            width: 25%;
+            max-height: 100%;
+        }
 
     .NavbarsContainer {
         right: 2vh;

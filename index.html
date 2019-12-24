@@ -62,19 +62,14 @@
         //Fridens liljor...
         -->
     <script src="scripts/TimeToNextMeeting.js"></script>
-    <script src="scripts/MainFunctions.js"></script>
-    <section class="NavbarSection">
-        <img class="Logo" src="img/Grafiskprofil/Logga/NTI_Johannebergs_Programmeringsklubb_vit.png" alt="Alternate Text" />
+    <header class="NavbarSection">
+        <a href="index.html"><img class="Logo" src="img/Grafiskprofil/Logga/NTI_Johannebergs_Programmeringsklubb_vit.png" alt="Logo" /></a>
 
-        <div class="NavbarsContainer" onclick="openNav()">
-            &#9776;
-        </div>
+        <input type="checkbox" class="toggler" >
+        <div class="hamburger"><div></div></div>
 
         <nav id="mySidenav" class="sidenav Hidden">
             <ul>
-                <li href="scripts/MainFunctions.js" class="closebtn" onclick="closeNav()">
-                    &times;
-                </li>
                 <li><a href="index.html">Start</a></li>
                 <li><a href="Tabs/ChallengesIndex.html">Challenges</a></li>
                 <li><a href="Tabs/MeetingsIndex.html">Tider/Möten</a></li>
@@ -83,7 +78,7 @@
                 <li><a href="Tabs/LogInIndex.html">*Admin*</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
     <section class="Content">
         <figure>
             <img src="img/code-bg.jpg" alt="Code background image" />
