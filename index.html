@@ -1,6 +1,28 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154772138-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154772138-1', { 'optimize_id': 'GTM-NJNF4M3' });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PFBRWZQ');</script>
+    <!-- End Google Tag Manager -->
+
     <link href="design/MainDesignMobile.css" rel="stylesheet" />
     <link href="design/MainDesignDesktop.css" rel="stylesheet" />
     <link href="design/FadeIn.css" rel="stylesheet" />
@@ -13,15 +35,27 @@
     <title>Happy Coding</title>
 </head>
 <body class="fade1" onload="getSeconds()">
-    <!-- Hej! Så trevligt att du ville hoppa hit och läsa lite kod. Jag kan göra det lite lättare för dig. (Du behöver inte läsa detta)
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFBRWZQ"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--
+        Hej! Så trevligt att du ville hoppa hit och läsa lite kod. Jag kan göra det lite lättare för dig. (Du behöver inte läsa detta)
 
         Jag använder mig av ett gridsystem där jag delar in hemsidan i 3 delar. Dessa tre delar är navbar, content och footer och de skalar sig olika beroende av vilken enhet man använder. I content har jag ett flexbox system vilket gör att om man lägger till en ny content tagg i sectionen så komer en ny box komma upp på hemsidan. Detta gör det lättare för användaren att lägga upp och ta bort ny information. Det gör det dessutom möjligt att lägga upp nya inlägg utan att faktiskt skriva någon kod. Du kan använda dig av ett javascript för att lägga in ett nytt inlägg så det visas med bra styling.
 
         Navbaren är mer en sidenav vilket gör att den kommer ut från siden. Denna kommer ut med det inversa gyllene snittet vilket gör det lätt för ögonen att kolla på, det är användarvänligt. Jag valde denna stil av boxar eftersom jag tycker den är stilren, användarvänlig, ser bra ut om man ska expandera och lätt att använda.
 
-        Jag använder mig av ett par scripts som körs i bakgrunden. Det första (MainFunctions.js) är en samling av simpla functioner som att stänga ett fönster eller öppna menyn. Sen har jag ett script som är en nedräkning till nästa onsdag kl 15:00 (TimeToNextMeeting.js), detta tar lite klasser och id's för att ändra på lite text och göra lite matte.
+        Jag använder mig av ett par scripts som körs i bakgrunden. Det första (MainFunctions.js) är en samling av simpla functioner som att stänga ett fönster eller öppna menyn. Sen har jag ett script som är en nedräkning till nästa onsdag kl 15:00 (TimeToNextMeeting.js), detta tar lite klasser och id's för att ändra på lite text och göra lite matte. För att komma in på AdminIndex.html så måste du skriva in ett lösenord men för att du inte ska fuska så är lösenordet krypterat. Sedan när du väl är inne i admin så är meningen att man ska kunna lägga till nya sectioner i de olika index.
+
+        Jag använder mig av lite APIer och webhooks för att få information från google och discord... Iframes. Har två design filer för att lättare kunna urskilja saker. En för mobile och en för desktop och sen ett par små mer för specifika saker.
 
         Footern är en simpel footer som finns för att visa lite tråkig info.Finns inget riktigt att säga om den. Den e blå, sitter längst ner, det finns lite text på den...
+
+        Alla bilder och sådant är inte copyright saker så de kan man använda.
 
         Jag kommer definitivt fortsätta med denna hemsida efter projektet eftersom det kommer vara framsidan för programmeringsklubben och jag är faktiskt ganska stolt över den. Jag kommer antagligen integrera APIer för att visa mer detaljerad info angående social media, github och lite annat roligt smått och gått runt omkring göteborg.
 
@@ -41,6 +75,7 @@
                 <li><a href="Tabs/MeetingsIndex.html">Tider/Möten</a></li>
                 <li><a href="https://github.com/ITGGoteborg">Github</a></li>
                 <li><a href="Tabs/ContactsIndex.html">Kontakter</a></li>
+                <li><a href="Tabs/LogInIndex.html">*Admin*</a></li>
             </ul>
         </nav>
     </header>
