@@ -20,13 +20,13 @@
             }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PFBRWZQ');</script>
+        })(window, document, 'script', 'dataLayer', 'GTM-PFBRWZQ');
+        </script>
     <!-- End Google Tag Manager -->
 
     <link href="design/MainDesignMobile.css" rel="stylesheet" />
     <link href="design/MainDesignDesktop.css" rel="stylesheet" />
     <link href="design/FadeIn.css" rel="stylesheet" />
-    <link href="design/Footer.css" rel="stylesheet" />
     <link href="design/Sidenav.css" rel="stylesheet" />
 
     <meta charset="UTF-8">
@@ -62,15 +62,24 @@
         //Fridens liljor...
         -->
     <script src="scripts/TimeToNextMeeting.js"></script>
+    <script src="scripts/TypeWriter.js"></script>
     <header class="NavbarSection">
-        <a href="index.html"><img class="Logo" src="img/Grafiskprofil/Logga/NTI_Johannebergs_Programmeringsklubb_vit.png" alt="Logo" /></a>
+        <a href="index.html"><img class="logo" src="img/Grafiskprofil/Logga/NTI_Johannebergs_Programmeringsklubb_vit.png" alt="Logo" /></a>
 
         <input type="checkbox" class="toggler" >
         <div class="hamburger"><div></div></div>
 
-        <nav id="mySidenav" class="sidenav Hidden">
+        <nav class="sidenav">
             <ul>
-                <li><a href="index.html">Start</a></li>
+                <li><a href="Tabs/ChallengesIndex.html">Challenges</a></li>
+                <li><a href="Tabs/MeetingsIndex.html">Tider/Möten</a></li>
+                <li><a href="https://github.com/ITGGoteborg">Github</a></li>
+                <li><a href="Tabs/ContactsIndex.html">Kontakter</a></li>
+                <li><a href="Tabs/LogInIndex.html">*Admin*</a></li>
+            </ul>
+        </nav>
+        <nav class="pagenav">
+            <ul>
                 <li><a href="Tabs/ChallengesIndex.html">Challenges</a></li>
                 <li><a href="Tabs/MeetingsIndex.html">Tider/Möten</a></li>
                 <li><a href="https://github.com/ITGGoteborg">Github</a></li>
@@ -84,7 +93,11 @@
             <img src="img/code-bg.jpg" alt="Code background image" />
         </figure>
         <content class="ContentSection">
-            <h1>WE <blue style="color: #3e7ee1; ">L</blue><Pink style="color: #eb0077;">O</Pink><Orange style="color: #f09700;">V</Orange>E CODE</h1>
+            <h1>
+                WE 
+                <blue style="color: #3e7ee1; ">L</blue><Pink style="color: #eb0077;">O</Pink><Orange style="color: #f09700;">V</Orange>E
+                <span class="txt-type" data-wait="3000" data-words='["CODE", "PROBLEMS", "PYTHON", "TECHNOLOGY", "C#", "HTML", "A.I.", "RUBY"]'></span>
+            </h1>
             <article class="ContentText">
                 <h2>Frivillig programmering för alla som vill!</h2>
                 <div class="TimeToNextMeeting">
@@ -92,10 +105,10 @@
                         Träff varje onsdag kl 15:00 i sal 325 om <br />
 
                         <b class="days" id="days"></b>
-                        <b class="smalltext">Dagar</b>
+                        <b class="smalltext">Dagar,</b>
 
                         <b class="hours" id="hours"></b>
-                        <b class="smalltext">Timmar</b>
+                        <b class="smalltext">Timmar,</b>
 
                         <b class="minutes" id="minutes"></b>
                         <b class="smalltext">Minuter</b>
