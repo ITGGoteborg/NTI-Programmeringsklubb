@@ -12,6 +12,8 @@ body {
     "Nav" 
     "Content" 
     "Footer";
+    height: auto;
+    width: 100%;
     font-family: sans-serif;
 }
 
@@ -100,7 +102,6 @@ body {
 .Content {
     grid-area: Content;
 }
-
     .Content figure {
         margin: 0;
         padding: 0;
@@ -109,7 +110,6 @@ body {
         width: 100%;
         z-index: -1;
     }
-
         .Content figure img {
             display: block;
             width: 100%;
