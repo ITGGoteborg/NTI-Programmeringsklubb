@@ -123,7 +123,10 @@ body {
     font-size: 10vw;
     text-align: center;
 }
-
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid white;
+}
 .ContentText {
     width: 95%;
     height: auto;
