@@ -12,16 +12,32 @@
         }
         .NavbarSection .pagenav {
             visibility: visible;
+        }
+        .NavbarSection a {
+            width: max-content;
+        }
 
+        .NavbarSection .pagenav {
+            list-style: none;
         }
             .NavbarSection .pagenav li, a {
                 text-decoration: none;
                 color: white;
-                font-size: 15px;
+                font-size: 1.2em;
                 font-weight: 500;
-
+            }
+            .NavbarSection .pagenav li {
+                display: inline-block;
+                padding: 0 20px;
+            }
+            .NavbarSection .pagenav li a {
+                transition: all 0.3s ease 0s;
+            }
+            .NavbarSection .pagenav li a:hover {
+                color: grey;
             }
 
+    
     .ContentSection h1 {
         font-size: 7vh;
     }

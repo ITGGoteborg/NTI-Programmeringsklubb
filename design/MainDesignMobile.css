@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 4em auto 4em;
+    grid-template-rows: 70px auto 4em;
     grid-template-areas: 
     "Nav" 
     "Content" 
@@ -17,10 +17,10 @@ body {
 
 .NavbarSection {
     grid-area: Nav;
-    min-height: 4em;
+    min-height: 70px;
     box-sizing: border-box;
     display: flex;
-    max-width: 1170px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0 0.7rem;
     justify-content: space-between;
