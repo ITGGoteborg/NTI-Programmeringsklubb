@@ -1,29 +1,22 @@
 @media (orientation: landscape) {
     body {
-        grid-template-rows: 40vh 1fr 20vh;
+        grid-template-rows: 70px 1fr 70px;
         overflow-x: hidden;
     }
 
     .NavbarSection {
-        height: auto;
+        min-height: 70px;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
-
-        header .toggler:checked ~ .sidenav {
-            width: 29vw;
+        .NavbarSection .toggler, .hamburger {
+            visibility: hidden;
         }
-        
         .NavbarSection a {
             width: 25%;
             max-height: 100%;
         }
-
-    .NavbarsContainer {
-        right: 2vh;
-        top: 2vh;
-        font-size: 10vh;
-        width: 13vh;
-        height: 6vh;
-    }
 
     .ContentSection h1 {
         font-size: 7vh;
@@ -34,17 +27,14 @@
         margin-top: 5vh;
         margin-bottom: 5vh;
     }
-
         .ContentText h2 {
             font-size: 5vh;
             padding: 5vh;
         }
-
         .ContentText h3 {
             font-size: 4vh;
             padding-top: 5vh;
         }
-
         .ContentText p {
             font-size: 3vh;
             padding: 5vh;
@@ -54,7 +44,6 @@
         height: 80vh;
         display: flex;
     }
-
     #Discord {
         height: 80vh;
     }

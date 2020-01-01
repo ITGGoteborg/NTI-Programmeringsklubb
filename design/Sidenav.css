@@ -5,6 +5,7 @@
     top: 0;
     right: 0;
     background-color: rgba(25, 25, 25, 0.90);
+    backdrop-filter: blur(2px);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 17vh;
@@ -32,14 +33,6 @@
                 background-color: rgba(96, 96, 96, 0.70)
             }
 
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 7vh;
-        font-size: 10vh;
-        margin-left: 14vh;
-    }
-
 @media (orientation: portrait) {
     .sidenav {
         padding-top: 17vw;
@@ -48,11 +41,5 @@
         .sidenav ul li {
             padding: 2.2vw 2.2vw 2.2vw 0vw;
             font-size: 7vw;
-        }
-
-        .sidenav .closebtn {
-            right: 7vw;
-            font-size: 10vw;
-            margin-left: 14vw;
         }
 }
