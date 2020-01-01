@@ -1,22 +1,26 @@
 @media (orientation: landscape) {
     body {
-        grid-template-rows: 70px 1fr 70px;
+        grid-template-rows: 6em auto 6em;
         overflow-x: hidden;
     }
 
     .NavbarSection {
-        min-height: 70px;
-        max-width: 1170px;
-        margin: 0 auto;
-        padding: 0 15px;
+        min-height: 6em;
     }
-        .NavbarSection .toggler, .hamburger {
+        .NavbarSection .toggler, .hamburger, .sidenav {
             visibility: hidden;
         }
-        .NavbarSection a {
-            width: 25%;
-            max-height: 100%;
+        .NavbarSection .pagenav {
+            visibility: visible;
+
         }
+            .NavbarSection .pagenav li, a {
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                font-weight: 500;
+
+            }
 
     .ContentSection h1 {
         font-size: 7vh;

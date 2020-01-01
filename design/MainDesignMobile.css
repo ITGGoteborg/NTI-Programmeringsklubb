@@ -7,19 +7,24 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-rows: 70px auto 70px;
+    grid-template-rows: 4em auto 4em;
     grid-template-areas: 
     "Nav" 
-    "Content" "Footer";
+    "Content" 
+    "Footer";
     font-family: sans-serif;
 }
 
 .NavbarSection {
     grid-area: Nav;
-    width: 100%;
-    min-height: 70px;
+    min-height: 4em;
     box-sizing: border-box;
     display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 0.7rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
     .NavbarSection .toggler {
@@ -78,11 +83,14 @@ body {
         header .toggler:checked ~ .sidenav {
             width: 61vw;
         }
+        .NavbarSection .pagenav {
+            visibility: hidden;
+        }
 
     .NavbarSection a {
-        max-width: 65%;
-        margin: 0.7rem;
-        max-height: 70px;
+        height: 75%;
+        display: flex;
+        align-items: center;
     }
         .NavbarSection a img {
             max-width: 100%;
