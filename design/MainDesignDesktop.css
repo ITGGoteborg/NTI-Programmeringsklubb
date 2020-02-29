@@ -1,6 +1,7 @@
 @media (orientation: landscape) {
     body {
-        grid-template-rows: 6em auto 6em;
+        padding: 0 0 6em 0;
+        grid-template-rows: 6em auto;
         overflow-x: hidden;
     }
 
@@ -66,5 +67,9 @@
     }
     #Discord {
         height: 80vh;
+    }
+
+    footer {
+        height: 6em;
     }
 }
