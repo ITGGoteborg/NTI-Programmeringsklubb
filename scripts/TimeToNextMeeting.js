@@ -4,8 +4,8 @@ var ticker;
 
 function getSeconds() {
     var nowDate = new Date();
-    var dy = 3; //Sunday through Saturday, 0 to 6
-    var countertime = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 15, 0, 0); //20 out of 24 hours = 8pm
+    var dy = 1; //Sunday through Saturday, 0 to 6
+    var countertime = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate(), 15, 15, 0); //20 out of 24 hours = 8pm
 
     var curtime = nowDate.getTime(); //current time
     var atime = countertime.getTime(); //countdown time
@@ -46,4 +46,4 @@ function tick() {
     document.getElementById("minutes").innerHTML = ((mins < 10) ? "0" : "") + mins;
     document.getElementById("seconds").innerHTML = ((secs < 10) ? "0" : "") + secs;
 }
-//Detta e jag stolt över!! (Tog sin lilla tid att göra)
+//Detta e jag stolt ï¿½ver!! (Tog sin lilla tid att gï¿½ra)
