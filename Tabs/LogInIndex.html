@@ -1,45 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154772138-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
-        gtag('config', 'UA-154772138-1', { 'optimize_id': 'GTM-NJNF4M3' });
+        gtag('config', 'UA-154772138-1', {
+            'optimize_id': 'GTM-NJNF4M3'
+        });
     </script>
 
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PFBRWZQ');</script>
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PFBRWZQ');
+    </script>
     <!-- End Google Tag Manager -->
+
+    <link href="../design/MainDesignMobile.css" rel="stylesheet" />
+    <link href="../design/MainDesignDesktop.css" rel="stylesheet" />
+    <link href="../design/FadeIn.css" rel="stylesheet" />
+    <link href="../design/Sidenav.css" rel="stylesheet" />
 
     <title>Login page</title>
 </head>
+
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFBRWZQ"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFBRWZQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <script src="../scripts/PasswordChecker.js"></script>
     <script src="../scripts/vigenere.min.js"></script>
     <script src="../scripts/vigenere.js"></script>
-    <form>
-        <label for="pswd">Enter your password: </label>
-        <input type="password" id="pswd">
-        <input type="button" value="Submit" onclick="checkPswd();" />
-    </form>
+    <script src="../scripts/MainFunctions.js"></script>
+
+
+    <header class="NavbarSection">
+        <a href="../index.html"><img class="Logo"
+                src="../img/Grafiskprofil/Logga/NTI_Johannebergs_Programmeringsklubb_vit.png" alt="Logo" /></a>
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+
+        <nav class="sidenav">
+            <ul>
+                <li><a href="ChallengesIndex.html">Challenges</a></li>
+                <li><a href="MeetingsIndex.html">Tider/Möten</a></li>
+                <li><a href="https://github.com/ITGGoteborg">Github</a></li>
+                <li><a href="ContactsIndex.html">Kontakter</a></li>
+                <li><a href="LogInIndex.html">*Admin*</a></li>
+            </ul>
+        </nav>
+        <nav class="pagenav">
+            <ul>
+                <li><a href="ChallengesIndex.html">Challenges</a></li>
+                <li><a href="MeetingsIndex.html">Tider/Möten</a></li>
+                <li><a href="https://github.com/ITGGoteborg">Github</a></li>
+                <li><a href="ContactsIndex.html">Kontakter</a></li>
+                <li><a href="LogInIndex.html">*Admin*</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="Content">
+        <figure>
+            <img src="../img/code-bg.jpg" alt="Code background image" />
+        </figure>
+        <content class="ContentSection">
+            <h1><blue style="color: #3e7ee1; ">A</blue><Pink style="color: #eb0077;">D</Pink><Orange style="color: #f09700;">M</Orange>IN LOGIN</h1>
+
+            <form>
+                <label for="pswd" style="color: white;">Enter your password: </label>
+                <input type="password" id="pswd">
+                <input type="button" value="Submit" onclick="checkPswd();" />
+            </form>
+        </content>
+    </section>
+
+    <footer class="fade1">
+        <p>
+            <a>©2019 CurrySoft Games</a>
+        </p>
+    </footer>
+
 </body>
+
 </html>
